@@ -1,0 +1,80 @@
+.book-detail-container {
+    display: flex;
+    flex-wrap: wrap; /* на случай узких экранов */
+    gap: 20px;
+    padding: 20px;
+    color: #fff;       /* делаем текст белым */
+    background-color: #121212; /* тёмный фон */
+  }
+  
+  /* Левая колонка: обложка */
+  .book-detail-image {
+    flex: 1;
+    min-width: 200px;   /* чтобы на узких экранах не ломалось */
+    max-width: 300px;   /* ограничиваем ширину обложки */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .book-detail-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .no-book-cover {
+    width: 100%;
+    height: 400px; /* или другой размер */
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #ccc;
+  }
+  
+  /* Правая колонка: информация */
+  .book-detail-info {
+    flex: 2;
+    min-width: 300px;
+  }
+  
+  .book-detail-info h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .book-detail-info p {
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .book-description {
+    margin-top: 20px;
+    /* текст уже белый, если нужно - можно задать цвет #ddd */
+  }
+  
+  /* Ссылки */
+  .links-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .book-link {
+    text-decoration: none;
+    color: #007bff; /* синий цвет */
+    background-color: #1e1e1e;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+  }
+  
+  .book-link:hover {
+    background-color: #FFD700; /* жёлтый при наведении */
+    color: #000;
+  }
+  

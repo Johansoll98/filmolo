@@ -1,0 +1,96 @@
+.tv-shows-page {
+  min-height: 80vh;
+  padding: 20px;
+  color: #fff;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between; /* сортировка слева, категория справа */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+/* Контейнер для кнопки категории */
+.category-container {
+  position: relative; /* для позиционирования dropdown */
+}
+
+/* Кнопка категории - крупнее */
+.category-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}   
+
+.category-btn:hover {
+  background-color: #444;
+}
+
+/* Dropdown для жанров */
+.dropdown-menu {
+  position: absolute;
+  top: 50px; /* смещаем ниже кнопки */
+  left: 0;   /* открывается под кнопкой */
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 999;
+  min-width: 150px;
+}
+
+.dropdown-item {
+  padding: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #444;
+}
+
+.tv-shows-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Контейнер для кнопки Load More */
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Стиль кнопки Load More – такая же, как и read-more */
+.load-more {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #1e1e1e;
+  color: #FFD700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.load-more:hover {
+  background-color: #FFD700;
+  color: #000;
+}

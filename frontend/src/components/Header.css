@@ -1,0 +1,171 @@
+.header {
+  background-color: #2C2C2C;
+  padding: 1.2rem 2rem; /* Более адаптивные единицы измерения */
+  position: relative;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px; /* Ограничение ширины для больших экранов */
+  margin: 0 auto; /* Центрирование контента */
+}
+
+/* Общие стили для всех навигационных блоков */
+.left-nav,
+.center-nav,
+.right-nav {
+  display: flex;
+  gap: 2rem; /* Использование rem для адаптивности */
+  align-items: center;
+}
+
+/* Специфичные стили для центральной навигации */
+.center-nav {
+  flex: 1;
+  justify-content: center;
+  margin: 0 1.5rem; /* Добавлен отступ от краев */
+}
+
+/* Стилизация ссылок */
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem; /* Оптимальный размер для чтения */
+  position: relative;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+}
+
+/* Эффекты при наведении */
+.nav-link:hover {
+  color: #FFD700;
+}
+
+/* Анимация подчеркивания вместо scale */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #FFD700;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Специфичные стили для логотипа */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Стили для контейнера кнопок авторизации */
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* Общие стили для кнопок Login и Register */
+.login-btn,
+.register-btn {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Эффект при наведении */
+.login-btn:hover,
+.register-btn:hover {
+  background-color: #FFD700;
+  color: #2C2C2C;
+  border-color: #FFD700;
+}
+
+/* Контейнер поисковой строки */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* расстояние между input и button */
+}
+
+/* Само поле ввода */
+.search-input {
+  width: 200px;              /* можно изменить */
+  padding: 8px 12px;         /* внутренняя отступ */
+  border-radius: 20px;       /* закруглённые углы */
+  border: 1px solid #ccc;    /* тонкая граница */
+  outline: none;             /* убираем обводку при фокусе */
+  font-size: 1rem;           /* размер шрифта */
+  background-color: #2c2c2c; /* тёмный фон, если хотите */
+  color: #fff;               /* светлый текст */
+  transition: border 0.3s ease;
+}
+
+/* Placeholder стиль */
+.search-input::placeholder {
+  color: #aaa;
+}
+
+/* При фокусе — меняем цвет границы */
+.search-input:focus {
+  border: 1px solid #FFD700; /* например, золотая */
+}
+
+/* Кнопка поиска */
+.search-button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #FFD700; /* золотой фон */
+  color: #000;              /* чёрный текст */
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Ховер-эффект */
+.search-button:hover {
+  background-color: #ffc400; /* немного темнее/светлее */
+}
+
+/* Опционально: если хотите так же фокус-эффект */
+.search-button:focus {
+  box-shadow: 0 0 0 2px rgba(255, 215, 0, 0.5);
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .center-nav {
+    display: none; /* Скрываем центральное меню на мобильных */
+  }
+
+  .left-nav,
+  .right-nav {
+    gap: 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}

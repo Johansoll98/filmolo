@@ -1,0 +1,84 @@
+/* Общие стили для страниц аутентификации */
+.auth-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 20px;
+}
+
+.auth-box {
+  background-color: #d8d8d8;
+  padding: 30px;
+  border-radius: 20px;
+  width: 350px;
+  max-width: 90%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.auth-title {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.auth-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.25);
+  outline: none;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-button:hover {
+  background-color: #0069d9;
+}
+
+.form-message {
+  color: #dc3545;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+  .auth-box {
+    padding: 20px;
+  }
+  
+  .auth-input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .auth-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,44 @@
+.info-block {
+    /* Основные стили блока */
+    width: 55%;
+    background-color: #2C2C2C;
+    color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  
+    /* Эффект при наведении */
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Увеличение при hover */
+  .info-block:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Стили заголовка */
+  .info-block h3 {
+    margin-top: 0;
+    color: #FFD700; /* Золотой */
+  }
+  
+  /* Текст описания */
+  .info-block p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  /* Если position="left", прижимаем блок к левому краю */
+  .info-block.left {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
+  /* Если position="right", прижимаем к правому */
+  .info-block.right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  

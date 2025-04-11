@@ -1,0 +1,44 @@
+.popular-page {
+  padding: 20px;
+  color: #fff;
+  min-height: 80vh;
+}
+
+.sort-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.popular-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.load-more-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.load-more {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #1e1e1e;
+  color: #FFD700;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.load-more:hover {
+  background-color: #FFD700;
+  color: #000;
+}

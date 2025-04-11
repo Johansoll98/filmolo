@@ -1,0 +1,8 @@
+nohup: ignoring input
+userRoutes.js LOADED
+showRoutes.js LOADED
+reviewRoutes.js LOADED
+ratingRoutes.js LOADED
+Server running on port 5000
+Connected to MongoDB database
+MongoDB connected successfully!

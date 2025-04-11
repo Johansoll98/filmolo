@@ -1,0 +1,44 @@
+.about-page {
+    min-height: 80vh;
+    background: url('../assets/cosmo2.jpg') no-repeat center center;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    /* чтобы текст был виден на тёмном фоне */
+}
+
+.about-page h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  
+  .about-page h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .about-page p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-page ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-page li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-page a {
+    color: #61dafb; /* Синий цвет ссылки, к примеру */
+    text-decoration: none;
+  }
+  
+  .about-page a:hover {
+    text-decoration: underline;
+  }
